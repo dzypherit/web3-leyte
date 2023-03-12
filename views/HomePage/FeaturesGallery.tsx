@@ -38,8 +38,8 @@ const TABS = [
     description:
       '<p>Ultimately, the community hopes to empower locals with the knowledge and skills necessary to participate in the growing Web3 ecosystem and to take advantage of the potential benefits of this transformative technology.</p>',
     imageUrl: '/features/empowerment.png',
-    baseColor: '88,193,132',
-    secondColor: '124,207,158',
+    baseColor: '183,194,16',
+    secondColor: '237,252,3',
   },
 ];
 
