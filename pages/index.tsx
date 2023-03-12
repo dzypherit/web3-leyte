@@ -35,9 +35,9 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             The community will also seek to collaborate with other organizations and individuals in the Web3 ecosystem to create a more cohesive and effective educational effort.{' '}
             </p>
             <ul>
-              <li>Educate</li>
-              <li>Collaborate</li>
-              <li>& Initiate</li>
+              <li>Network</li>
+              <li>Connect</li>
+              <li>& Collaborate</li>
             </ul>
           </BasicSection>
         </WhiteBackgroundContainer>
