@@ -25,12 +25,12 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Educating minorities on Web3" overTitle="Educate">
+          <BasicSection imageUrl="/basicsection/education.png" title="Educating minorities on Web3" overTitle="Educate">
             <p>
             The main focus of this community is to educate locals about Web3 technology, which refers to the next generation of the internet that is more decentralized, secure, and transparent than the current Web2.{' '}
             </p>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="Collaborate with other Communities" overTitle="Collaboration" reversed>
+          <BasicSection imageUrl="/basicsection/collaborate.png" title="Collaborate with other Communities" overTitle="Collaboration" reversed>
             <p>
             The community will also seek to collaborate with other organizations and individuals in the Web3 ecosystem to create a more cohesive and effective educational effort.{' '}
             </p>
