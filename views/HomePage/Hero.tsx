@@ -21,9 +21,6 @@ export default function Hero() {
         Web3 Leyte is a community that is interested in exploring and contributing to the decentralized web (Web3)
         </Description>
         <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
-          </Button>
           <NextLink href="#" passHref>
             <Button transparent>
               Documentation <span>&rarr;</span>

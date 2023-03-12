@@ -21,8 +21,8 @@ import { NavItems } from 'types';
 
 const navItems: NavItems = [
   { title: 'Home', href: '/', outlined: false },
-  { title: 'Join Us', href: 'https://discord.gg/ytMGw4TsZZ', outlined: true },
 ];
+
 
 const TinaCMS = dynamic(() => import('tinacms'), { ssr: false });
 
