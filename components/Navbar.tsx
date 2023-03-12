@@ -82,6 +82,7 @@ export default function Navbar({ items }: NavbarProps) {
           {items.map((singleItem) => (
             <NavItem key={singleItem.href} {...singleItem} />
           ))}
+          <a href="https://discord.gg/ytMGw4TsZZ"><CustomButton>Join Today</CustomButton></a>
         </NavItemList>
         <ColorSwitcherContainer>
 
