@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Container from 'components/Container';
 import { media } from 'utils/media';
 
-const PARTNER_LOGOS = [
+const BACKED_LOGOS = [
   'logohu.png',
   'NF2023 logo.png',
   'Web3bcdlogo.png',
@@ -16,10 +16,10 @@ const PARTNER_LOGOS = [
   'web3philippines.png',
 ];
 
-export default function Partners() {
+export default function Backed() {
   return (
     <PartnersWrapper>
-      <Title>official partners with</Title>
+      <Title>Backed By</Title>
       <Swiper
         modules={[Autoplay]}
         slidesPerView={6}
@@ -34,9 +34,9 @@ export default function Partners() {
         }}
         className="swiper-wrapper"
       >
-        {PARTNER_LOGOS.map((logo) => (
+        {BACKED_LOGOS.map((logo) => (
           <SwiperSlide key={logo}>
-            <NextImage src={'/partners/' + logo} alt={normalizePartnerLogoName(logo)} width={128} height={128} />
+            <NextImage src={'/partners/' + logo} alt={normalizeBackedLogoName(logo)} width={128} height={128} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -44,7 +44,7 @@ export default function Partners() {
   );
 }
 
-function normalizePartnerLogoName(logo: string) {
+function normalizeBackedLogoName(logo: string) {
   return logo.replace('.png', '');
 }
 

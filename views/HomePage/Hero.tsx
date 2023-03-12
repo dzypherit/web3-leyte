@@ -7,6 +7,7 @@ import HeroIllustration from 'components/HeroIllustation';
 import OverTitle from 'components/OverTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
+import Image from "next/image";
 
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
@@ -14,25 +15,30 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
+        <CustomOverTitle>Where community meets innovation.</CustomOverTitle>
+        <Heading>Building a better Leyte with Blockchain and Web3.</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+        Web3 Leyte is a community that is interested in exploring and contributing to the decentralized web (Web3)
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
             Subscribe to the newsletter <span>&rarr;</span>
           </Button>
-          <NextLink href="#whitepaper" passHref>
+          <NextLink href="#" passHref>
             <Button transparent>
-              Features <span>&rarr;</span>
+              Documentation <span>&rarr;</span>
             </Button>
           </NextLink>
         </CustomButtonGroup>
       </Contents>
       <ImageContainer>
-        <HeroIllustration />
+      <Image
+                  src="/logo/logoicon.png"
+                  alt="Web3 Logo"
+                  width={500}
+                  height={500}
+                  className="ccustom"
+                />
       </ImageContainer>
     </HeroWrapper>
   );

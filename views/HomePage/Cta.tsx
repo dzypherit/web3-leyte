@@ -13,21 +13,15 @@ export default function Cta() {
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>Lorem ipsum dolor sit amet</OverTitle>
-          <SectionTitle>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</SectionTitle>
+          <OverTitle>Join Us Today!</OverTitle>
+          <SectionTitle>Experience the Future of Web with Web3 Leyte</SectionTitle>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
-            culpa.
+          By joining Web3 Leyte, you can discover how these technologies can transform the way we interact with the internet, enabling new possibilities for privacy, trust, and ownership. Whether you're a developer, investor, or simply curious about the future of the web, Web3 Leyte provides a unique opportunity to engage with this emerging ecosystem and shape the future of the internet. 
           </Description>
           <ButtonGroup>
-            <NextLink href="#early-access" passHref>
-              <Button>
-                Subscribe to the newsletter <span>&rarr;</span>
-              </Button>
-            </NextLink>
-            <NextLink href="#whitepaper" passHref>
+            <NextLink href="https://discord.gg/ytMGw4TsZZ" passHref>
               <OutlinedButton transparent>
-                Features <span>&rarr;</span>
+              Join us today! <span>&rarr;</span>
               </OutlinedButton>
             </NextLink>
           </ButtonGroup>

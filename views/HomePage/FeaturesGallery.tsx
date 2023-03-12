@@ -10,26 +10,34 @@ import { media } from 'utils/media';
 
 const TABS = [
   {
-    title: 'Find relevant media contacts - multiline title',
+    title: 'Awareness',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-3.png',
+      '<p>The community aims to raise awareness about the potential benefits of Web3 technology, such as increased privacy, data ownership, and financial sovereignty.</p>',
+    imageUrl: '/features/awareness.png',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
   },
   {
-    title: 'Another amazing feature',
+    title: 'Workshop',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-4.png',
+      '<p>The workshops will provide a more hands-on approach to learning about Web3 technology, allowing locals to get practical experience with building decentralized applications (dApps), smart contracts, and other Web3 tools.</p>',
+    imageUrl: '/features/workshop.png',
     baseColor: '57,148,224',
     secondColor: '99,172,232',
   },
   {
-    title: 'And yet... another truly fascinating feature',
+    title: 'Educational Material',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-5.png',
+      '<p>The educational materials, such as articles, videos, and podcasts, will provide a way for locals to learn about Web3 technology at their own pace, as well as to stay up-to-date with the latest developments in the field.</p>',
+    imageUrl: '/features/educational_material.png',
+    baseColor: '88,193,132',
+    secondColor: '124,207,158',
+  },
+  {
+    title: 'Empowerment',
+    description:
+      '<p>Ultimately, the community hopes to empower locals with the knowledge and skills necessary to participate in the growing Web3 ecosystem and to take advantage of the potential benefits of this transformative technology.</p>',
+    imageUrl: '/features/empowerment.png',
     baseColor: '88,193,132',
     secondColor: '124,207,158',
   },
@@ -76,8 +84,8 @@ export default function FeaturesGallery() {
   return (
     <FeaturesGalleryWrapper>
       <Content>
-        <OverTitle>features</OverTitle>
-        <SectionTitle>What are you signing in for?</SectionTitle>
+        <OverTitle>About</OverTitle>
+        <SectionTitle>What are we offering?</SectionTitle>
       </Content>
       <GalleryWrapper>
         <TabsContainer>{tabsMarkup}</TabsContainer>

@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import NextLink from 'next/link';
+import Image from "next/image";
 import { useRouter } from 'next/router';
 import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
@@ -11,7 +12,6 @@ import Button from './Button';
 import Container from './Container';
 import Drawer from './Drawer';
 import { HamburgerIcon } from './HamburgerIcon';
-import Logo from './Logo';
 
 const ColorSwitcher = dynamic(() => import('../components/ColorSwitcher'), { ssr: false });
 
@@ -69,7 +69,13 @@ export default function Navbar({ items }: NavbarProps) {
       <Content>
         <NextLink href="/" passHref>
           <LogoWrapper>
-            <Logo />
+          <Image
+                  src="/logo/logo.png"
+                  alt="Web3 Logo"
+                  width={140}
+                  height={30}
+                  className="ccustom"
+                />
           </LogoWrapper>
         </NextLink>
         <NavItemList>
@@ -78,7 +84,7 @@ export default function Navbar({ items }: NavbarProps) {
           ))}
         </NavItemList>
         <ColorSwitcherContainer>
-          <ColorSwitcher />
+
         </ColorSwitcherContainer>
         <HamburgerMenuWrapper>
           <HamburgerIcon aria-label="Toggle menu" onClick={toggle} />
